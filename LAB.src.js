@@ -16,7 +16,7 @@
 		
 		// stateless variables used across all $LAB instances
 		root_page = /^[^?#]*\//.exec(location.href)[0],
-		root_domain = /^\w+\:\/\/\/?[^\/]+/.exec(root_page)[0],
+		root_domain = /^[\w|\-]+\:\/\/\/?[^\/]+/.exec(root_page)[0],
 		append_to = document.head || document.getElementsByTagName("head"),
 		
 		// inferences... ick, but still necessary
